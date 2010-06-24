@@ -1,16 +1,3 @@
-pyquake3
+pyquake3 - talk to Quake 3 servers from Python scripts
 
-A complete rewrite of Gerald Kaszuba's pyquake3 Python module.
-Yes, it's a bit over-designed. Yes, the mixin class is scary.
-Yes, it fixes a number of problems with the original. No, it's
-not 100% backwards compatible.
-
-The pyquake3 module is used to talk to Quake 3 servers from
-Python scripts, so server browsers, statistics tools, and
-administration interfaces are the main applications.
-
-This version of pyquake3 was developed for (and tested with)
-Urban Terror 4.1 on ioQuake3 1.36 dedicated servers. I hope
-it'll work for other Quake 3 games as well. If it doesn't,
-I'd be happy to fix things for your favorite game if you
-send me enough information to do so. Better yet, send a patch.
+See http://wiki.github.com/madprof/pyquake3/ for more information.
