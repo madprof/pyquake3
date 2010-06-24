@@ -208,15 +208,19 @@ class Server(object):
         self.players = []
 
     def address(self):
+        """Helper to get "ip:port" for a server."""
         return "%s:%s" % (self.host, self.port)
 
     def get_address(self):
+        """Compatibiltiy alias for address()."""
         return self.address()
 
     def command(self, command):
+        """Wrapper calling Connection.command() for a server."""
         return self.connection.command(command)
 
     def filter_name(self, name):
+        """Helper to remove Quake 3 color codes from player names."""
         result = ""
         i = 0
         while i < len(name):
