@@ -255,7 +255,11 @@ class Parser(object):
         values = data[1::2]
         self.variables = dict(zip(keys, values))
 
-        self.name = self.variables["sv_hostname"]
+        if self.filter:
+            self.name = self.filter_name(self.variables["sv_hostname"])
+        else:
+            self.name = self.variables["sv_hostname"]
+
         self.game = self.variables["gamename"]
         self.map = self.variables["mapname"]
         self.protocol = self.variables["protocol"]
